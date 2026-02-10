@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery — Sleeknail Lounge</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar scrolled" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon"><i class="fas fa-spa"></i></span>
+                <span class="logo-text">Sleek<span class="accent">nail</span> Lounge</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="gallery.html" class="nav-link active">Gallery</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="https://wa.me/233595555838?text=Hi%2C%20I'd%20like%20to%20book%20an%20appointment%20at%20Sleeknail%20Lounge" target="_blank" class="btn btn-primary btn-sm">Book Now</a>
+                <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <span class="section-tag" style="color:var(--primary-light);">Our Work</span>
+            <h1 class="section-title" style="color:#fff;">Nail Art <span class="accent">Gallery</span></h1>
+            <p style="color:rgba(255,255,255,0.7); max-width:550px;">Browse our collection of stunning nail designs and get inspired for your next appointment.</p>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="section gallery">
+        <div class="container">
+            <div class="gallery-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="manicure">Manicure</button>
+                <button class="filter-btn" data-filter="gel">Gel</button>
+                <button class="filter-btn" data-filter="art">Nail Art</button>
+                <button class="filter-btn" data-filter="pedicure">Pedicure</button>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item" data-category="gel">
+                    <img src="images/1.jpeg" alt="Gel nail design" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">Gel Extensions</span>
+                        <h4>Rose Gold Elegance</h4>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="art">
+                    <img src="images/2.jpeg" alt="Nail art design" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">Nail Art</span>
+                        <h4>Abstract Florals</h4>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="manicure">
+                    <img src="images/3.jpeg" alt="Classic manicure" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">Manicure</span>
+                        <h4>French Tips</h4>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="gel">
+                    <img src="images/4.jpeg" alt="Gel polish nails" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">Gel Polish</span>
+                        <h4>Berry Bliss</h4>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="art">
+                    <img src="images/5.jpeg" alt="Artistic nails" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">Nail Art</span>
+                        <h4>Geometric Dreams</h4>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="pedicure">
+                    <img src="images/6.jpeg" alt="Luxury pedicure" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">Pedicure</span>
+                        <h4>Summer Vibes</h4>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="manicure">
+                    <img src="images/7.jpeg" alt="Pink manicure" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">Manicure</span>
+                        <h4>Blushing Pink</h4>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="gel">
+                    <img src="images/8.jpeg" alt="Gel nail art" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">Gel</span>
+                        <h4>Midnight Glam</h4>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="art">
+                    <img src="images/9.jpeg" alt="Nail art detail" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">Nail Art</span>
+                        <h4>Crystal Accents</h4>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="manicure">
+                    <img src="images/10.jpeg" alt="Manicure design" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">Manicure</span>
+                        <h4>Nude Perfection</h4>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="gel">
+                    <img src="images/11.jpeg" alt="Gel nails" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">Gel Extensions</span>
+                        <h4>Ombre Sunset</h4>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="pedicure">
+                    <img src="images/12.jpeg" alt="Pedicure design" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">Pedicure</span>
+                        <h4>Fresh & Clean</h4>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="art">
+                    <img src="images/13.jpeg" alt="Creative nail art" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">Nail Art</span>
+                        <h4>Marble Magic</h4>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="manicure">
+                    <img src="images/14.jpeg" alt="Elegant manicure" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">Manicure</span>
+                        <h4>Classic Red</h4>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="gel">
+                    <img src="images/15.jpeg" alt="Gel nail design" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">Gel Polish</span>
+                        <h4>Pastel Dream</h4>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="art">
+                    <img src="images/16.jpeg" alt="Artistic nail design" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">Nail Art</span>
+                        <h4>Butterfly Wings</h4>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="pedicure">
+                    <img src="images/17.jpeg" alt="Pedicure nails" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">Pedicure</span>
+                        <h4>Ocean Breeze</h4>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="gel">
+                    <img src="images/18.jpeg" alt="Gel extension nails" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">Gel Extensions</span>
+                        <h4>Champagne Toast</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Love What You See? <span class="accent">Book Now!</span></h2>
+                <p>Get inspired by our gallery and book your appointment to get the nails of your dreams.</p>
+                <div class="cta-buttons">
+                    <a href="https://wa.me/233595555838?text=Hi%2C%20I'd%20like%20to%20book%20an%20appointment%20at%20Sleeknail%20Lounge" target="_blank" class="btn btn-white btn-lg"><i class="fab fa-whatsapp"></i> Book on WhatsApp</a>
+                    <a href="tel:+233595555838" class="btn btn-outline-white btn-lg"><i class="fas fa-phone"></i> 059 555 5838</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <a href="index.html" class="logo">
+                        <span class="logo-icon"><i class="fas fa-spa"></i></span>
+                        <span class="logo-text">Sleek<span class="accent">nail</span> Lounge</span>
+                    </a>
+                    <p>Premium nail salon dedicated to making you feel beautiful and confident. Every visit is a luxury experience.</p>
+                    <div class="footer-socials">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="https://wa.me/233595555838?text=Hi%2C%20I'd%20like%20to%20book%20an%20appointment%20at%20Sleeknail%20Lounge" target="_blank">Book Now</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">Classic Manicure</a></li>
+                        <li><a href="services.html">Gel Extensions</a></li>
+                        <li><a href="services.html">Nail Art</a></li>
+                        <li><a href="services.html">Luxury Pedicure</a></li>
+                        <li><a href="services.html">Dip Powder</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li><i class="fas fa-location-dot"></i> Kass Towers, Accra</li>
+                        <li><i class="fas fa-phone"></i> 059 555 5838</li>
+                        <li><i class="fas fa-envelope"></i> Sleeknaillounge@gmail.com</li>
+                        <li><i class="fas fa-clock"></i> Mon-Sat: 9AM-7PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Sleeknail Lounge. All rights reserved. | Developed by Jeffery Kobby Gaisey</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
