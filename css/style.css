@@ -9,20 +9,20 @@
     --primary-light: #58d68d;
     --primary-dark: #27ae60;
     --accent: #45b36b;
-    --bg-dark: #0d1f17;
-    --bg-darker: #091410;
-    --bg-card: #142a1e;
+    --bg-dark: #ffffff;
+    --bg-darker: #f8fffe;
+    --bg-card: #ffffff;
     --bg-light: #f5faf7;
     --bg-cream: #edf5f0;
-    --text-primary: #ffffff;
-    --text-secondary: #b8b8cc;
+    --text-primary: #1a1a1a;
+    --text-secondary: #555555;
     --text-dark: #2d2d3f;
     --text-body: #666680;
-    --border: rgba(255,255,255,0.08);
+    --border: rgba(46,204,113,0.15);
     --border-light: rgba(0,0,0,0.08);
-    --shadow-sm: 0 2px 8px rgba(0,0,0,0.08);
-    --shadow-md: 0 8px 30px rgba(0,0,0,0.12);
-    --shadow-lg: 0 20px 60px rgba(0,0,0,0.15);
+    --shadow-sm: 0 2px 8px rgba(0,0,0,0.05);
+    --shadow-md: 0 8px 30px rgba(0,0,0,0.08);
+    --shadow-lg: 0 20px 60px rgba(0,0,0,0.1);
     --shadow-glow: 0 0 40px rgba(46,204,113,0.15);
     --radius-sm: 8px;
     --radius-md: 12px;
@@ -265,7 +265,7 @@ ul {
     font-family: var(--font-heading);
     font-size: 1.5rem;
     font-weight: 700;
-    color: #fff;
+    color: var(--text-primary);
     letter-spacing: 1px;
 }
 
@@ -276,7 +276,7 @@ ul {
 }
 
 .nav-link {
-    color: rgba(255,255,255,0.7);
+    color: var(--text-secondary);
     font-size: 0.9rem;
     font-weight: 500;
     padding: 8px 16px;
@@ -286,8 +286,8 @@ ul {
 
 .nav-link:hover,
 .nav-link.active {
-    color: #fff;
-    background: rgba(255,255,255,0.08);
+    color: var(--text-primary);
+    background: rgba(46,204,113,0.1);
 }
 
 .nav-actions {
@@ -330,7 +330,7 @@ ul {
 .page-hero {
     position: relative;
     padding: 140px 0 60px;
-    background: linear-gradient(135deg, var(--bg-dark) 0%, #0f2a1a 100%);
+    background: linear-gradient(135deg, #ffffff 0%, #f0fdf4 100%);
     text-align: center;
     overflow: hidden;
 }
@@ -351,12 +351,12 @@ ul {
 .page-hero h1 {
     font-family: var(--font-heading);
     font-size: clamp(2.2rem, 5vw, 3.5rem);
-    color: #fff;
+    color: var(--text-primary);
     margin-bottom: 1rem;
 }
 
 .page-hero p {
-    color: rgba(255,255,255,0.7);
+    color: var(--text-secondary);
     font-size: 1.1rem;
     max-width: 600px;
     margin: 0 auto;
@@ -369,7 +369,7 @@ ul {
     gap: 0.5rem;
     margin-top: 1.5rem;
     font-size: 0.9rem;
-    color: rgba(255,255,255,0.5);
+    color: var(--text-secondary);
 }
 
 .page-hero .breadcrumb a {
@@ -383,7 +383,7 @@ ul {
 }
 
 .page-hero .breadcrumb span {
-    color: rgba(255,255,255,0.7);
+    color: var(--text-secondary);
 }
 
 /* ---------- Hero Section ---------- */
@@ -407,9 +407,9 @@ ul {
     inset: 0;
     background: linear-gradient(
         135deg,
-        rgba(26,26,46,0.92) 0%,
-        rgba(26,26,46,0.8) 50%,
-        rgba(26,26,46,0.7) 100%
+        rgba(255,255,255,0.5) 0%,
+        rgba(255,255,255,0.3) 50%,
+        rgba(255,255,255,0.2) 100%
     );
 }
 
@@ -437,14 +437,14 @@ ul {
     font-family: var(--font-heading);
     font-size: clamp(2.5rem, 6vw, 5rem);
     font-weight: 700;
-    color: #fff;
+    color: var(--text-primary);
     line-height: 1.15;
     margin-bottom: 24px;
 }
 
 .hero-subtitle {
     font-size: clamp(1rem, 2vw, 1.2rem);
-    color: rgba(255,255,255,0.7);
+    color: var(--text-secondary);
     max-width: 600px;
     margin: 0 auto 40px;
     line-height: 1.8;
@@ -467,7 +467,7 @@ ul {
 
 .stat {
     text-align: center;
-    color: #fff;
+    color: var(--text-primary);
 }
 
 .stat-number {
@@ -864,7 +864,7 @@ ul {
 .gallery-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(to top, rgba(26,26,46,0.9) 0%, transparent 60%);
+    background: linear-gradient(to top, rgba(46,204,113,0.8) 0%, transparent 60%);
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -992,11 +992,11 @@ ul {
 /* ---------- Testimonials Section ---------- */
 .testimonials {
     background: linear-gradient(135deg, var(--bg-dark), var(--bg-darker));
-    color: #fff;
+    color: var(--text-primary);
 }
 
 .testimonials .section-title {
-    color: #fff;
+    color: var(--text-primary);
 }
 
 .testimonials-slider {
@@ -1348,7 +1348,7 @@ ul {
 /* ---------- Footer ---------- */
 .footer {
     background: var(--bg-dark);
-    color: rgba(255,255,255,0.7);
+    color: var(--text-secondary);
     padding: 80px 0 0;
 }
 
@@ -1357,7 +1357,7 @@ ul {
     grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
     gap: 50px;
     padding-bottom: 50px;
-    border-bottom: 1px solid rgba(255,255,255,0.08);
+    border-bottom: 1px solid var(--border);
 }
 
 .footer-about p {
