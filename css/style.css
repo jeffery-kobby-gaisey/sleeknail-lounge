@@ -238,10 +238,11 @@ ul {
 }
 
 .navbar.scrolled {
-    background: rgba(26,26,46,0.95);
+    background: rgba(255,255,255,0.95);
     backdrop-filter: blur(20px);
     padding: 12px 0;
-    box-shadow: 0 4px 30px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 20px rgba(46,204,113,0.1);
+    border-bottom: 1px solid rgba(46,204,113,0.1);
 }
 
 .nav-container {
