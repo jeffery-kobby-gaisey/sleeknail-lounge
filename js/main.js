@@ -4,19 +4,6 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
-    // ---------- Preloader ----------
-    const preloader = document.getElementById('preloader');
-    window.addEventListener('load', () => {
-        setTimeout(() => {
-            preloader.classList.add('hidden');
-        }, 800);
-    });
-
-    // Fallback: hide preloader after 3s
-    setTimeout(() => {
-        preloader.classList.add('hidden');
-    }, 3000);
-
     // ---------- Navbar Scroll ----------
     const navbar = document.getElementById('navbar');
     const backToTop = document.getElementById('backToTop');
